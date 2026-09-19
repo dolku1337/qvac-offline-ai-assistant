@@ -91,7 +91,7 @@ http://localhost:3000
 ```
 
 On the very first question, QVAC will download and cache the
-`LLAMA\_3\_2\_1B\_INST\_Q4\_0` model (a few hundred MB); the UI will show
+`LLAMA\\\_3\\\_2\\\_1B\\\_INST\\\_Q4\\\_0` model (a few hundred MB); the UI will show
 **"Loading local AI model..."** with progress while this happens. Every
 question after that reuses the already-loaded model.
 
@@ -121,14 +121,13 @@ model download/caching step.
 
 ## Screenshot
 
-*!\[QVAC Offline AI Assistant screenshot](screenshot.png)*
 
-*(Add a screenshot or screen recording of the app answering a question here
-before submitting.)*
+
+!\[QVAC Offline AI Assistant](./screenshot.png)
 
 ## Troubleshooting
 
-**`RPC\_INIT\_TIMEOUT` / `WORKER\_STARTUP\_FAILED`**
+**`RPC\\\_INIT\\\_TIMEOUT` / `WORKER\\\_STARTUP\\\_FAILED`**
 
 This means the QVAC worker process couldn't finish starting up in time.
 Common causes:
