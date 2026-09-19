@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QVAC Offline AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>QVAC Offline AI Assistant</h1>
+      <p class="subtitle">On-device AI &mdash; no cloud, no API keys</p>
+    </header>
+
+    <main class="chat-card">
+      <div id="status-bar" class="status-bar status-idle">
+        <span id="status-dot" class="status-dot"></span>
+        <span id="status-text">Ready to load local AI model</span>
+      </div>
+
+      <div id="answer-box" class="answer-box" hidden>
+        <div class="answer-label">AI response</div>
+        <div id="answer-text" class="answer-text"></div>
+      </div>
+
+      <form id="ask-form" class="ask-form">
+        <textarea
+          id="question-input"
+          class="question-input"
+          placeholder="Ask your local AI something..."
+          rows="3"
+          required
+        ></textarea>
+        <button type="submit" id="ask-button" class="ask-button">
+          Ask AI
+        </button>
+      </form>
+
+      <p class="footnote">Running locally with QVAC</p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+*.log
+
+# QVAC model cache / downloaded weights (large binary files, not source)
+.qvac/
+qvac-cache/
